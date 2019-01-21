@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <% include partials/bootstrap.ejs %>
+    <title>Create</title>
+</head>
+<body>
+    <!--Navigation-->
+    <% include partials/defaultNav.ejs %>
+      
+    <!--Spacing-->
+    <div class = "m-5"></div>
+    
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <button type="button" class = "btn btn-lg btn-primary col-5">Create from scratch</button>
+        </div>
+
+        <!--Spacing-->
+        <div class = "m-5"></div>
+        
+        <!--voucher 1-->
+        <% include partials/voucher.ejs %>
+
+        <!--Spacing-->
+        <div class = "m-5"></div>
+
+        <!--voucher 2-->
+        <% include partials/voucher.ejs %>  
+        
+        <!--Spacing-->
+        <div class = "m-5"></div>
+
+        <!--voucher 3-->
+        <% include partials/voucher.ejs %>
+    </div>
+</body>
+</html>
