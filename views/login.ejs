@@ -7,13 +7,13 @@
 
         <!-- Bootstrap CSS -->
         <% include partials/bootstrap.ejs %>
-        
+
         <title>OpenJio</title>
     </head>
 <body>
     <!--Navigation-->
     <% include partials/loginNav.ejs %>
-      
+
     <!--Spacing-->
     <div class = "m-5"></div>
 
@@ -21,55 +21,90 @@
     <div class="container">
         <div class= "row">
             <div class="col-4">
-                Hello
             </div>
             <div class="col-8">
                 <div class="container">
                     <h4 class="text-center">Register</h4>
                     <form class="form" action="#" method="POST">
-                        
-                        <div class = "container">
-                            <div class="row">
-                                <div class = "col-4">
-                                    <p class="text-right align-middle">Enter Name:</p>
-                                </div>
-                                <div class="col-8">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Username">
-                                    </div> 
-                                </div>    
-                            </div>    
-                        </div>
+
                         <div class = "container">
                                 <div class="row">
                                     <div class = "col-4">
-                                        <p class="text-right align-middle">Enter Name:</p>
+                                        <p class="text-right align-middle">Enter First Name:</p>
                                     </div>
                                     <div class="col-8">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div> 
-                                    </div>    
-                                </div>    
+                                            <input type="text" class="form-control"name="first_name" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class = "container">
                                     <div class="row">
                                         <div class = "col-4">
-                                            <p class="text-right align-middle">Enter Name:</p>
+                                            <p class="text-right align-middle">Enter Last Name:</p>
                                         </div>
                                         <div class="col-8">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Username">
-                                            </div> 
-                                        </div>    
-                                    </div>    
+                                                <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class = "container">
+                                        <div class="row">
+                                            <div class = "col-4">
+                                                <p class="text-right align-middle">Enter Gender:</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="gender" placeholder="Gender">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "container">
+                                            <div class="row">
+                                                <div class = "col-4">
+                                                    <p class="text-right align-middle">Enter Email:</p>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "container">
+                                                <div class="row">
+                                                    <div class = "col-4">
+                                                        <p class="text-right align-middle">Enter Location:</p>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="location" placeholder="Location">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "container">
+                                                    <div class="row">
+                                                        <div class = "col-4">
+                                                            <p class="text-right align-middle">Enter Phone Number:</p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" name="phone_number" placeholder="Phone Number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                              <button type="submit" class="btn btn-primary float-right">Log In</button>
-                    </form>  
+                    </form>
                 </div>
             </div>
-        </div>       
+        </div>
     </div>
 </body>
 </html>
-      
