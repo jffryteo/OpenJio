@@ -3,10 +3,9 @@ var express = require('express');
 var app = express();
 var createEventController = require('./controllers/createEventController');
 const mysql = require('mysql');
-const bodyparser = require('body-parser');
+const bodyParser = require('body-parser');
+const fileUpload = require('express-fileupload');
 var routes = require('./routes/index');
-
-app.use(bodyparser.json());
 
 
 
@@ -28,12 +27,17 @@ db.connect((err) => {
     else
     console.log('MySql has failed...' +JSON.stringify(err, undefined,2));
 });
+global.db = db;
+
 
 // set up template engine
 app.set('view engine', 'ejs');
-
+app.set('views', __dirname + '/views'); // set express to look in this folder to render our view
 // set up static files
 app.use('/images', express.static('images'));
+app.use(fileUpload()); // configure fileupload
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json()); // parse form data client
 
 // fire controllers
 //createEventController(app);
